@@ -1,8 +1,11 @@
-#include <iostream>
+#pragma once
+
+#include"Game.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";
+	auto game = Game();
+	game.Run();
 }

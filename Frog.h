@@ -1,18 +1,19 @@
 #pragma once
+
+#include<SFML\System.hpp>
 #include<SFML\Graphics.hpp>
-#include"GameObject.h"
+#include<SFML\Window.hpp>
+
+#include"GameObject2d.h"
 #include"Frog.cpp"
 
-class Frog : GameObject
+class Frog : GameObject2d
 {
 private:
-	sf::Vector2i Position;
+	sf::Vector2<double> Position;
 	int lives;
-
 public:
 	Frog();
-
 	void Update(double delta);
-
 	void Draw();
 };
